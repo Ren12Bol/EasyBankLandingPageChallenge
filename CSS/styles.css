@@ -1,0 +1,57 @@
+:root {
+    /* Layout */
+    --desktop: 1112px;
+    --mobile: 375px; 
+}
+
+.header {
+    background: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--desktop);
+    position: relative;
+    margin: auto;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    list-style-type: none;
+    display: flex;
+}
+
+.menu_link {
+    text-decoration: none;
+    color:gray;
+}
+
+.menu_item {
+    margin: 15px;
+}
+
+.btn {
+    border: none;
+    border-radius: 2em;
+    color:white;
+    padding: 1em 2.5em;
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%),hsl(192, 70%, 51%));
+    cursor: pointer;
+    user-select: none;   
+}
+
+.header .btn {
+    display: block;
+    align-self: center;
+}
+
+  .btn:focus {
+    outline:none;
+  }
+
+  .btn:active {
+    transform: scale(0.90);
+  }
